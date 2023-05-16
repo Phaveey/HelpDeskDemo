@@ -16,7 +16,7 @@ namespace HelpDeskDemo.Domain.Entities
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string? ProblemDescription { get; set; }
         public bool IsResolved { get; set; }
-        public Users Users { get; set; }
-        public Equipment Equipment { get; set; }
+        public Users? Users { get; set; }
+        public virtual Equipment? Equipment { get; set; }
     }
 }

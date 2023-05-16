@@ -18,7 +18,8 @@ namespace HelpDeskDemo.Domain.Entities
         public string? Description { get; set; }
         public string? ManufacturerName { get; set; }
         public bool IsAvailable { get; set; }
-        public ICollection<Problems> Problem { get; set; }   
+        public ICollection<Problems>? Problems { get; set; }  
+        public Ref_Equipment_Types? ref_Equipment_Types { get; set; }
 
     }
 }
