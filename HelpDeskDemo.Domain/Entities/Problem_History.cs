@@ -14,7 +14,7 @@ namespace HelpDeskDemo.Domain.Entities
         public string? Status_Code { get; set; }
         public int Assign_Staff_Id { get; set; }
         public string? Fix_DateTime { get; set; }
-        public Problems Problems { get; set; }
+        public ICollection<Problems>? Problems { get; set; }
        
     }
 }
