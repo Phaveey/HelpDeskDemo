@@ -13,6 +13,6 @@ namespace HelpDeskDemo.Application.Contracts
         Task<Problem_History> GetProblemHistoryById(int Id, bool trackChanges);
         void CreateProblemHistory(Problem_History entity);
         void UpdateProblemHistory(Problem_History entity);
-        void DeleteProblemHistory(Problem_History entity)
+        void DeleteProblemHistory(Problem_History entity);
     }
 }

@@ -17,4 +17,4 @@ namespace HelpDeskDemo.Application.Contracts
     }
 
 }
-}
+
