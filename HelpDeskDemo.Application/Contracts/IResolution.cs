@@ -9,14 +9,14 @@ namespace HelpDeskDemo.Application.Contracts
 {
     public class IResolution
     {
-        Task<IEnumerable<Resolution>> GetAllRef_User_TypesAsync(bool trackChanges);
+        Task<IEnumerable<Resolution>> GetAllResolutionsync(bool trackChanges);
 
-        Task<Ref_User_Types> GetHelpDeskAsync(int Id, bool trackChanges);
+        Task<Resolution> GetHelpDeskAsync(int Id, bool trackChanges);
 
-        Task<Ref_User_Types> GetRef_User_TypesName(string Ref_User_TypesName, bool trackChanges);
+        Task<Resolution> GetResolution(string ResolutionName, bool trackChanges);
 
-        void CreateRef_User_Types(Ref_User_Types ref_User_Types);
+        void CreateResolution(Resolution resolution);
 
-        void DeleteRef_User_Types(Ref_User_Types ref_User_Types);
+        void DeleteResolution(Resolution resolutions);
     }
 }

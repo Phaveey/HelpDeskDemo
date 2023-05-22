@@ -9,14 +9,14 @@ namespace HelpDeskDemo.Application.Contracts
 {
     public interface ISupport_Staff
     {
-        Task<IEnumerable<Ref_User_Types>> GetAllRef_User_TypesAsync(bool trackChanges);
+        Task<IEnumerable<Support_Staff>> GetAllSupport_StaffAsync(bool trackChanges);
 
-        Task<Ref_User_Types> GetHelpDeskAsync(int Id, bool trackChanges);
+        Task<Support_Staff> GetHelpDeskAsync(int Id, bool trackChanges);
 
-        Task<Ref_User_Types> GetRef_User_TypesName(string Ref_User_TypesName, bool trackChanges);
+        Task<Support_Staff> GetSupport_StaffName(string Support_StaffName, bool trackChanges);
 
-        void CreateRef_User_Types(Ref_User_Types ref_User_Types);
+        void CreateSupport_Staff(Support_Staff support_Staff);
 
-        void DeleteRef_User_Types(Ref_User_Types ref_User_Types);
+        void DeleteSupport_Staff(Support_Staff support_Staff);
     }
 }

@@ -11,7 +11,6 @@ namespace HelpDeskDemo.Domain.Entities
     {
         [Key]
 
-
         public string? SkillCode { get; set; }
 
 
