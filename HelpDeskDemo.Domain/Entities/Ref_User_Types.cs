@@ -10,7 +10,6 @@ namespace HelpDeskDemo.Domain.Entities
     public class Ref_User_Types
     {
         [Key]
-        public int UserTypeId { get; set; }
         public string? UserTypeCode { get; set; }
 
         [Required(ErrorMessage = "User type description is required")]

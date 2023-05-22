@@ -10,7 +10,7 @@ namespace HelpDeskDemo.Domain.Entities
     public class Ref_Priority_Levels
     {
         [Key]
-        public int Priority_Level_Code { get; set; }
+        public string? Priority_Level_Code { get; set; }
 
         [Required(ErrorMessage = "Priority level description is required")]
         [MaxLength(200, ErrorMessage = "Priority level description must be at most 200 characters long")]

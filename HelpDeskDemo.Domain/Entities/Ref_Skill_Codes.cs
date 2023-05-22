@@ -10,8 +10,6 @@ namespace HelpDeskDemo.Domain.Entities
     public class Ref_Skill_Codes
     {
         [Key]
-        public int SkillCodeId { get; set; }
-
         public string? SkillCode { get; set; }
 
         [Required(ErrorMessage = "Skill description is required")]

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelpDeskDemo.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace HelpDeskDemo.Application.Contracts
 {
     public interface IRef_Skill_Codes
     {
+        Task<IEnumerable<Ref_Skill_Codes>> GetAllAsync(bool trackChanges);
+        Task<Ref_Skill_Codes> GetRefProblemStatusByCode(int Id, bool trackChanges);
+        void CreateRefSkillCodes(Ref_Skill_Codes entity);
+        void UpdateRefSkillCodes(Ref_Skill_Codes entity);
+        void DeleteRefSkillCodes(Ref_Skill_Codes entity);
     }
 }

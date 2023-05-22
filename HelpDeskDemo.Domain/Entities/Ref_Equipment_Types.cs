@@ -10,7 +10,7 @@ namespace HelpDeskDemo.Domain.Entities
     public class Ref_Equipment_Types
     {
         [Key]
-        public int EquipmentTypeCode { get; set; }
+        public string? EquipmentTypeCode { get; set; }
 
         [Required(ErrorMessage = "Equipment type description is required")]
         [MaxLength(100, ErrorMessage = "Equipment type description must be at most 100 characters long")]

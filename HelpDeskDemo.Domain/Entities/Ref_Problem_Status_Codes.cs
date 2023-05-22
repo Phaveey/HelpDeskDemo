@@ -10,7 +10,7 @@ namespace HelpDeskDemo.Domain.Entities
     public class Ref_Problem_Status_Codes
     {
         [Key]
-        public int ProblemStatusCode { get; set; }
+        public string? ProblemStatusCode { get; set; }
 
         [Required(ErrorMessage = "Problem status description is required")]
         [MaxLength(30, ErrorMessage = "Problem status description must be at most 200 characters long")]
