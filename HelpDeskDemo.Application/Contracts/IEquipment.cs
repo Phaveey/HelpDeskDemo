@@ -8,5 +8,6 @@ namespace HelpDeskDemo.Application.Contracts
 {
     public interface IEquipment
     {
+        
     }
 }

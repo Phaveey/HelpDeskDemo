@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Persistence.Common
 {
-    public class RepositoryContext : Common
+    public  class RepositoryBase
     {
-        public RepositoryContext() { }  
     }
 }

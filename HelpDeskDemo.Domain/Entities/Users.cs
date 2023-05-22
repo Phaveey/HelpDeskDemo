@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +10,26 @@ namespace HelpDeskDemo.Domain.Entities
 {
     public class Users
     {
-       public int User_Id { get; set; }
-       public int User_Type_Code { get; set; }
+       [Key]
+       public int UserId { get; set; }
+
+       [ForeignKey(nameof(Ref_User_Types))]
+       public int UserTypeCode { get; set; }
+
+       [Required(ErrorMessage ="Fullname is required")]
+       [MaxLength(100, ErrorMessage ="Maximum character length is 100")]
        public string? FullName { get; set; }
-       public string? User_PhoneNumber { get; set; }
-       public string? User_EmailAdd { get; set; }
-       public string? Other_user_details { get; set; }
-       public Ref_User_Types Ref_User_Types { get; set; }
+
+       [DataType(DataType.PhoneNumber)]
+       public string? UserPhoneNumber { get; set; }
+
+       [DataType(DataType.EmailAddress)]
+       public string? UserEmailAddress { get; set; }
+
+       public string? OtherUserDetails { get; set; }
+
+       //Navigational properties
+       public Ref_User_Types RefUserTypes { get; set; }
        public ICollection<Problems> Problems { get; set; }
 
     }

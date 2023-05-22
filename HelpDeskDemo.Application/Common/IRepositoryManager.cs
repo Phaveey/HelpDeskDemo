@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelpDeskDemo.Persistence.Common
+namespace HelpDeskDemo.Application.Common
 {
-    public class RepositoryContext : Common
+    public interface IRepositoryManager
     {
-        public RepositoryContext() { }  
+
     }
 }
