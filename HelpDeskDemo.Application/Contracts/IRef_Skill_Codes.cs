@@ -10,7 +10,7 @@ namespace HelpDeskDemo.Application.Contracts
     public interface IRef_Skill_Codes
     {
         Task<IEnumerable<Ref_Skill_Codes>> GetAllAsync(bool trackChanges);
-        Task<Ref_Skill_Codes> GetRefSkillByCode(int Id, bool trackChanges);
+        Task<Ref_Skill_Codes> GetRefSkillByCode(string Code, bool trackChanges);
         void CreateRefSkillCodes(Ref_Skill_Codes entity);
         void UpdateRefSkillCodes(Ref_Skill_Codes entity);
         void DeleteRefSkillCodes(Ref_Skill_Codes entity);

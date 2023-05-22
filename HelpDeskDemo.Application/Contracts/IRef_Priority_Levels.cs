@@ -10,7 +10,7 @@ namespace HelpDeskDemo.Application.Contracts
     public interface IRef_Priority_Levels
     {
         Task<IEnumerable<Ref_Priority_Levels>> GetAllAsync(bool trackChanges);
-        Task<Ref_Priority_Levels> GetRefPriorityLevelsByCode(int Id, bool trackChanges);
+        Task<Ref_Priority_Levels> GetRefPriorityLevelsByCode(string Code, bool trackChanges);
         void CreateRefPriorityLevels(Ref_Priority_Levels entity);
         void UpdateRefPriorityLevels(Ref_Priority_Levels entity);
         void DeleteRefPriorityLevels(Ref_Priority_Levels entity);
