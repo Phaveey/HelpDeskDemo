@@ -9,9 +9,16 @@ namespace HelpDeskDemo.Application.Common
 {
     public interface IRepositoryManager
     {
-        IEqu Equipment { get; }
-
-
-
+        IEquipmentRepository EquipmentRepository { get; }
+        IProblemHistoryRepository ProblemHistoryRepository { get; }
+        IProblemsRepository ProblemsRepository { get; }
+        IRefEquipmentTypesRepository RefEquipmentTypesRepository { get; }
+        IRefPriorityLevelsRepository RefPriorityLevelsRepository { get; }
+        IRefProblemStatusCodesRepository RefProblemStatusCodesRepository { get; }
+        IRefSkillCodesRepository RefSkillCodesRepository { get; }
+        IResolutionRepository ResolutionRepository { get; }
+        IStaffSkillsRepository StaffSkillsRepository { get; }
+        ISupportStaffRepository SupportStaffRepository { get; }
+        IUsersRepository UsersRepository { get; }
     }
 }
