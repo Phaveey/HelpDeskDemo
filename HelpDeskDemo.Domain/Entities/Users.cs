@@ -29,8 +29,8 @@ namespace HelpDeskDemo.Domain.Entities
        public string? OtherUserDetails { get; set; }
 
        //Navigational properties
-       public Ref_User_Types RefUserTypes { get; set; }
-       public ICollection<Problems> Problems { get; set; }
+       public Ref_User_Types? RefUserTypes { get; set; }
+       public ICollection<Problems>? Problems { get; set; }
 
     }
 }

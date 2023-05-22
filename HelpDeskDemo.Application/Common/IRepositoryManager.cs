@@ -20,5 +20,6 @@ namespace HelpDeskDemo.Application.Common
         IStaffSkillsRepository StaffSkillsRepository { get; }
         ISupportStaffRepository SupportStaffRepository { get; }
         IUsersRepository UsersRepository { get; }
+        Task SaveAsync();
     }
 }
