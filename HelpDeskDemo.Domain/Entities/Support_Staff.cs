@@ -13,7 +13,7 @@ namespace HelpDeskDemo.Domain.Entities
         public int Staff_Id { get; set; }
 
 
-        public int Date_Joined { get; set; }
+        public int Date_Joined { get; set; } 
 
 
         public int Date_Left { get; set; }
@@ -21,7 +21,7 @@ namespace HelpDeskDemo.Domain.Entities
 
         public string? Staff_FullName { get; set; }
 
-
+        [DataType(DataType.PhoneNumber)]
         public string? Staff_Phone { get; set; }
 
 

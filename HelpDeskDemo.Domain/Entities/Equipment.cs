@@ -33,6 +33,9 @@ namespace HelpDeskDemo.Domain.Entities
         [Required(ErrorMessage = "Description is required")]
         public string? Description { get; set; }
 
+
+        [Required(ErrorMessage = "Manufacturer name is required")]
+        [MaxLength(30, ErrorMessage = "Manufacturer name must be at most 30 characters")]
         public string? ManufacturerName { get; set; }
 
         public bool IsAvailable { get; set; }

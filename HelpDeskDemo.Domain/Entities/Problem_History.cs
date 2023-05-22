@@ -31,7 +31,7 @@ namespace HelpDeskDemo.Domain.Entities
         //Navigational Properties Here
         public Problems? Problems { get; set; }
         public ICollection<Resolution>? Resolutions { get; set; }
-        public 
+       
        
     }
 }
