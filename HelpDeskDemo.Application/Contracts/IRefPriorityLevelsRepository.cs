@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IRef_Priority_Levels
+    public interface IRefPriorityLevelsRepository
     {
         Task<IEnumerable<Ref_Priority_Levels>> GetAllAsync(bool trackChanges);
         Task<Ref_Priority_Levels> GetRefPriorityLevelsByCode(string Code, bool trackChanges);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IRef_Equipment_Types
+    public interface IRefEquipmentTypesRepository
     {
         Task<IEnumerable<Ref_Equipment_Types>> GetAllAsync(bool trackChanges);
         Task<Ref_Equipment_Types> GetRefEquipmentTypesByCode(string Code, bool trackChanges);

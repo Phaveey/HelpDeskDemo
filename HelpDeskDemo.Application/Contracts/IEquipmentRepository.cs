@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IEquipment
+    public interface IEquipmentRepository
     {
         Task<IEnumerable<Equipment>> GetAllAsync(bool trackChanges);
         Task<Equipment> GetEquipmentById(int Id, bool trackChanges);

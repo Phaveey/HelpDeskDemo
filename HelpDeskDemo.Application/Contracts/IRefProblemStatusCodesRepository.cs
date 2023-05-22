@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IRef_Problem_Status_Codes
+    public interface IRefProblemStatusCodesRepository
     {
         Task<IEnumerable<Ref_Problem_Status_Codes>> GetAllAsync(bool trackChanges);
         Task<Ref_Problem_Status_Codes> GetRefProblemStatusByCode(string Code, bool trackChanges);

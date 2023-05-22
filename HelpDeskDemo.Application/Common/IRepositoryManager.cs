@@ -9,7 +9,7 @@ namespace HelpDeskDemo.Application.Common
 {
     public interface IRepositoryManager
     {
-        IEquipmentRepository Equipment { get; }
+        IEqu Equipment { get; }
 
 
 
