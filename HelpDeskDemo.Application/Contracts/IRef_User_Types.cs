@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface ISupport_Staff
+    public interface IRef_User_Types
     {
         Task<IEnumerable<Ref_User_Types>> GetAllRef_User_TypesAsync(bool trackChanges);
 
