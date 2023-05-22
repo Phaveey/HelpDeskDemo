@@ -13,6 +13,7 @@ namespace HelpDeskDemo.Application.Contracts
         Task<IEnumerable<Equipment>> GetAllAsync(bool trackChanges);
         Task<Equipment> GetEquipmentById(int Id, bool trackChanges);
         void CreateEquipment(Equipment entity);
+        void UpdateEquipment(Equipment entity);
         void DeleteEquipment(Equipment entity);
 
     }
