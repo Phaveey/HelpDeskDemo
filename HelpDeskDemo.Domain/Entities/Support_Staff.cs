@@ -34,6 +34,6 @@ namespace HelpDeskDemo.Domain.Entities
 
         [Required(ErrorMessage = "Staff details are required")]
         [MaxLength(100, ErrorMessage = "Maximum character length is 100")]
-        public string StaffDetails { get; set; }
+        public string? StaffDetails { get; set; }
     }
 }
