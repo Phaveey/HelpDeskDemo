@@ -13,7 +13,5 @@ namespace HelpDeskDemo.Domain.CommonEntity
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public string UpdatedBy { get; set; } = null!;
         public string? ModifiedBy { get; set; }
-
-
     }
 }

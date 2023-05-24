@@ -22,38 +22,16 @@ namespace HelpDeskDemo.Persistence.Common
                 .HasKey(e => new { e.Staff_Code });
         }
         DbSet<Equipment> Equipment { get; set; }
-
-
         DbSet<Problem_History> Problem_History { get; set; }
-
-
         DbSet<Problems> Problems { get; set; }
-
-
         DbSet<Ref_Equipment_Types> Ref_Equipment_Types { get; set; }
-
-
         DbSet<Ref_Priority_Levels> Ref_Priority_Levels { get; set; }
-
-
         DbSet<Ref_Problem_Status_Codes> Ref_Problem_Stataus_Code { get; set; }
-
-
         DbSet<Ref_Skill_Codes> Ref_Skill_Codes { get; set; }
-
-
         DbSet<Ref_User_Types> Ref_User_Types { get; set; }
-
-
         DbSet<Resolution> Resolution { get; set; }
-
-
         DbSet<Staff_Skills> Staff_Skills { get; set; }
-
-
         DbSet<Support_Staff> Support_Staff { get; set; }
-
-
         DbSet<Users> Users { get; set; }
     }
 }
