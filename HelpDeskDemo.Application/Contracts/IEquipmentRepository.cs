@@ -16,6 +16,5 @@ namespace HelpDeskDemo.Application.Contracts
         void CreateEquipment(Equipment entity);
         void UpdateEquipment(Equipment entity);
         void DeleteEquipment(Equipment entity);
-
     }
 }
