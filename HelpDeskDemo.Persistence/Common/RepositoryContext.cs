@@ -14,6 +14,13 @@ namespace HelpDeskDemo.Persistence.Common
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Staff_Skills>()
+                .HasKey(e =>new { e.Staff_Id });
+            modelBuilder.Entity<Staff_Skills>()
+                .HasKey(e => new { e.Staff_Code });
+        }
         DbSet<Equipment> Equipment { get; set; }
 
 

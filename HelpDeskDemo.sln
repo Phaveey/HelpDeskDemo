@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDeskDemo.ServiceContrac
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpDeskDemo.WebApi", "HelpDeskDemo.WebApi\HelpDeskDemo.WebApi.csproj", "{66F6F20D-D23E-49EA-8982-332015C10055}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogService", "LogService\LogService.csproj", "{3E44353F-4F38-428E-A6BD-4A8D7437FDE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogService", "LogService\LogService.csproj", "{3E44353F-4F38-428E-A6BD-4A8D7437FDE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
