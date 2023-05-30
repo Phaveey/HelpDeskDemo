@@ -2,7 +2,7 @@
 
 namespace HelpDeskDemo.Persistence.Repositories
 {
-    internal class EquipmentRepository
+    public interface EquipmentRepository
     {
         Task<IEnumerable<Equipment>> GetAllEquipmentAsync(bool trackChanges);
 
