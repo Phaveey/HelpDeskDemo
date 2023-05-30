@@ -19,6 +19,8 @@ namespace HelpDeskDemo.Domain.Entities
         public int EquipmentTypeCode { get; set; }
 
         [DataType(DataType.Date)]
+
+     
         public DateTime AquiredDate { get; set; }
 
         [DataType(DataType.Date)]

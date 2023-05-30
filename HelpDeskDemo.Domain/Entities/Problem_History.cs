@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Domain.Entities
 {
-    public  class Problem_History
+    public class Problem_History
     {
         [Key]
         public int ProblemHistoryId { get; set; }
