@@ -2,13 +2,11 @@
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IEquipment
+    public interface IEquipmentRepository
     {
         Task<IEnumerable<Equipment>> GetAllEquipmentAsync(bool trackChanges);
 
-        Task<Equipment> GetHelpDeskAsync(int Id, bool trackChanges);
-
-        Task<Equipment> GetEquipmentByName(string EquipmentName, bool trackChanges);
+        Task<Equipment> GetEquipmentById(int id, bool trackChanges);
 
         void CreateEquipment(Equipment equipment);
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IRef_Skill_Codes
+    public interface IRef_Skill_CodesRepository
     {
         Task<IEnumerable<Ref_Skill_Codes>> GetAllRef_Skill_CodesAsync(bool trackChanges);
 

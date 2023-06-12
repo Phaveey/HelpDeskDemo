@@ -11,30 +11,30 @@ namespace HelpDeskDemo.Application.Common
     public interface IRepositoryManager
     {
         
-        public IEquipment   Equipment{ get; }
+        public IEquipmentRepository   EquipmentRepository{ get; }
 
-        public IProblem_History Problem_HistoryRepository { get; }
+        public IProblem_HistoryRepository Problem_HistoryRepository { get; }
 
-        public IProblems ProblemsRepository { get; }
+        public IProblemsRepository ProblemsRepository { get; }
 
-        public IRef_Equipment_Types Ref_EquipmentRepository { get; }
+        public IRef_Equipment_TypesRepository Ref_EquipmentRepository { get; }
 
-        public IRef_Priority_Levels Ref_Priority_LevelsRepository { get; }
+        public IRef_Priority_LevelsRepository Ref_Priority_LevelsRepository { get; }
 
-        public IRef_Problem_Status_Codes Ref_Problem_Status_CodeRepository { get; }
+        public IRef_Problem_Status_CodesRepository Ref_Problem_Status_CodeRepository { get; }
 
-        public IRef_Skill_Codes Ref_Skill_CodesRepository { get; }
+        public IRef_Skill_CodesRepository Ref_Skill_CodesRepository { get; }
 
-        public IRef_User_Types Ref_User_TypesRepository { get; }
+        public IRef_User_TypesRepository Ref_User_TypesRepository { get; }
 
-        public IResolution ResolutionRepository { get; }
+        public IResolutionRepository ResolutionRepository { get; }
 
-        public IStaff_Skills Staff_SkillsRepository { get; }
+        public IStaff_SkillsRepository Staff_SkillsRepository { get; }
 
-        public ISupport_Staff Support_StaffRepository { get; }
+        public ISupport_StaffRepository Support_StaffRepository { get; }
 
-        public IUsers UsersRepository { get; }
+        public IUsersRepository UsersRepository { get; }
 
-        void Save();
+        Task SaveAsync();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using HelpDeskDemo.Application.Common;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,25 +9,26 @@ using System.Threading.Tasks;
 namespace LogService
 {
     public class LoggerManager : ILoggerManager
-    {
+    {   
+        private static ILogger logger = LogManager.GetCurrentClassLogger();
         public void LogDebugging(string message)
         {
-            throw new NotImplementedException();
+            logger.Debug(message);
         }
 
         public void LogError(string message)
         {
-            throw new NotImplementedException();
+            logger.Error(message);
         }
 
         public void LogInfo(string message)
         {
-            throw new NotImplementedException();
+            logger.Info(message);
         }
 
         public void LogWarning(string message)
         {
-            throw new NotImplementedException();
+            logger?.Warn(message);
         }
     }
 }

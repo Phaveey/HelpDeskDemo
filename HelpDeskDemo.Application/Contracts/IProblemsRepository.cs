@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IProblems
+    public interface IProblemsRepository
     {
         Task<IEnumerable<Problems>> GetAllProblemtAsync(bool trackChanges);
 
-        Task<Problems> GetHelpDeskAsync(int Id, bool trackChanges);
-
-        Task<Problems> GetProblemByName(string ProblemName, bool trackChanges);
+        Task<Problems> GetProblemsAsync(int Id, bool trackChanges);
 
         void CreateProblem(Problems problems);
 

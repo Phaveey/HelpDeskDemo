@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IUsers
+    public interface IUsersRepository
     {
         Task<IEnumerable<Users>> GetAllUsersAsync(bool trackChanges);
 

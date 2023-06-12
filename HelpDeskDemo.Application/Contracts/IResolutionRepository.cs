@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HelpDeskDemo.Application.Contracts
 {
-    public interface IResolution
+    public interface IResolutionRepository
     {
         Task<IEnumerable<Resolution>> GetAllResolutionsync(bool trackChanges);
 

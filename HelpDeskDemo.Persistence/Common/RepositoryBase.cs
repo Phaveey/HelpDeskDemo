@@ -1,7 +1,10 @@
 ﻿using HelpDeskDemo.Application.Common;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,29 +13,32 @@ namespace HelpDeskDemo.Persistence.Common
 {
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
-        public void Create(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        protected RepositoryContext RepositoryContext;
 
-        public void Delete(T entity)
+        public RepositoryBase(RepositoryContext repositoryContext) 
         {
-            throw new NotImplementedException();
+            RepositoryContext = repositoryContext;
         }
+        public void Create(T entity) => RepositoryContext.Set<T>().Add(entity);
+        
+        public void Delete (T entity)=> RepositoryContext.Set<T>().Remove(entity);
 
-        public IQueryable<T> FindAll(bool trackChanges)
-        {
-            throw new NotImplementedException();
-        }
+        public IQueryable<T> FindAllAsync(bool trackChanges) =>
+                RepositoryContext.Set<T>()
+                .AsNoTracking();
 
-        public IQueryable<T> FindByCondition(System.Linq.Expressions.Expression<Func<T, bool>> condition, bool trackChanges)
+        public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges)
         {
-            throw new NotImplementedException();
+            return !trackChanges ?
+                RepositoryContext.Set<T>() 
+                .AsNoTracking() :
+                RepositoryContext.Set<T>()
+                .Where(expression);
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            RepositoryContext.Set<T>().Update(entity);
         }
     }
 }
